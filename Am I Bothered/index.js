@@ -1,17 +1,23 @@
 
-//bothered calc takes a percentage ands assigns a value using if statments
+//bothered calc takes a percentage ands assigns a value using if statements
 //need to attach this to the class in index.html
-var bothered = Math.floor(Math.random() *100);
+//var bothered = Math.floor(Math.random() *100);
 
-document.getElementsByType("button")[i].addEventListener("click", function document.getElementByID ("result") {
-if (bothered === 100) {
-  innerHTML"TEXT"
+document.getElementById("butt").addEventListener("click", changeThingy);
+
+function changeThingy() {
+console.log("what");
+  document.getElementById("result").innerHTML ="proper bothered mate";
 }
-if (bothered > 60 && bothered <= 99) {
-  //text
-}
+// {//
+//if (bothered === 100) {
+//  innerHTML"TEXT"
+//}
+//if (bothered > 60 && bothered <= 99) {
+
+//}
 //other things here
-if (bothered < 10 && bothered > 60) {
+//if (bothered < 10 && bothered > 60) {
   //not bothered
-}
-}
+//}
+//}
