@@ -9,6 +9,7 @@ function changeThingy() {
 console.log("what");
   document.getElementById("result").innerHTML ="proper bothered mate";
 }
+//comented out most stuff to make it work, console.log added for test purposes
 // {//
 //if (bothered === 100) {
 //  innerHTML"TEXT"
