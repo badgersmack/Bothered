@@ -1,24 +1,26 @@
+//bothered calc takes a random number ands assigns a string to a p using if statements
 
-//bothered calc takes a percentage ands assigns a value using if statements
-//need to attach this to the class in index.html
-//var bothered = Math.floor(Math.random() *100);
+var calcBothered = Math.floor(Math.random() * 5);
 
-document.getElementById("butt").addEventListener("click", changeThingy);
+document.getElementById("butt").addEventListener("click", howBothered);
 
-function changeThingy() {
-console.log("what");
-  document.getElementById("result").innerHTML ="proper bothered mate";
+function howBothered() {
+  console.log("Ey?");
+  if (calcBothered === 4) {
+    document.getElementById("result").innerHTML = "Proper bothered mate.";
+  }
+  if (calcBothered === 3) {
+    document.getElementById("result").innerHTML = "Pretty bothered actually.";
+  }
+  if (calcBothered === 2) {
+    document.getElementById("result").innerHTML = "A bit bothered.";
+  }
+  if (calcBothered === 1) {
+    document.getElementById("result").innerHTML = "Not that bothered like.";
+  }
+  if (calcBothered === 0) {
+    document.getElementById("result").innerHTML = "Not in the least bit bothered.";
+  }
 }
-//comented out most stuff to make it work, console.log added for test purposes
-// {//
-//if (bothered === 100) {
-//  innerHTML"TEXT"
-//}
-//if (bothered > 60 && bothered <= 99) {
 
-//}
-//other things here
-//if (bothered < 10 && bothered > 60) {
-  //not bothered
-//}
-//}
+//console.log added for test purposes
