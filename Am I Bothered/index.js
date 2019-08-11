@@ -24,3 +24,5 @@ function howBothered() {
 }
 
 //console.log added for test purposes
+//could have done this an an array but can't see how that would have been any better
+//would prefer to make this work every time the click happens: code does run but no longer changes displayed page
