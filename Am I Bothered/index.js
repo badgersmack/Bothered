@@ -1,11 +1,26 @@
-//bothered calc takes a random number ands assigns a string to a p using if statements
+//bothered calc takes a random number ands assigns a string to a <p> using if statements
 
-var calcBothered = Math.floor(Math.random() * 5);
+var calcBothered;
+var newCalcBothered;
 
-document.getElementById("butt").addEventListener("click", howBothered);
+function getRandomNumber() {
+  newCalcBothered = Math.floor(Math.random() * 5);
+  if (newCalcBothered != calcBothered) {
+    calcBothered = newCalcBothered;
+    howBothered();
+  } else {
+    getRandomNumber();
+  }
+}
+//recursion makes the result different every time
+
+document.getElementById("butt").addEventListener("click", getRandomNumber);
 
 function howBothered() {
-  console.log("Ey?");
+
+  console.log(newCalcBothered);
+//console.log included for test purposes
+
   if (calcBothered === 4) {
     document.getElementById("result").innerHTML = "Proper bothered mate.";
   }
@@ -22,7 +37,3 @@ function howBothered() {
     document.getElementById("result").innerHTML = "Not in the least bit bothered.";
   }
 }
-
-//console.log added for test purposes
-//could have done this an an array but can't see how that would have been any better
-//would prefer to make this work every time the click happens: code does run but no longer changes displayed page
